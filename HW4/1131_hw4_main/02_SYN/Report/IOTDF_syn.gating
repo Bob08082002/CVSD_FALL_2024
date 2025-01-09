@@ -1,0 +1,364 @@
+ 
+****************************************
+Report : clock_gating
+        -gating_elements
+Design : IOTDF
+Version: U-2022.12
+Date   : Mon Nov 18 19:32:58 2024
+****************************************
+
+Information: Identification of clock-gating cells has not been performed. Pre-existing clock-gating cells will not be reported. (PWR-947)
+--------------------------------------------------------------------------------
+                             Clock Gating Cell Report
+--------------------------------------------------------------------------------
+
+ Clock Gating Bank : clk_gate_cnt_read_r_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = 70, HOLD = 0.00, SETUP = 0.00, OBS_DEPTH = 5 
+
+     INPUTS :
+         clk_gate_cnt_read_r_reg/CLK = clk 
+         clk_gate_cnt_read_r_reg/EN = in_en 
+         clk_gate_cnt_read_r_reg/TE = n4302 
+
+     OUTPUTS :
+         clk_gate_cnt_read_r_reg/ENCLK = net5204 
+
+ Clock Gating Bank : clk_gate_cnt_round_r_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = 70, HOLD = 0.00, SETUP = 0.00, OBS_DEPTH = 5 
+
+     INPUTS :
+         clk_gate_cnt_round_r_reg/CLK = clk 
+         clk_gate_cnt_round_r_reg/EN = n4301 
+         clk_gate_cnt_round_r_reg/TE = n4302 
+
+     OUTPUTS :
+         clk_gate_cnt_round_r_reg/ENCLK = net5211 
+
+ Clock Gating Bank : clk_gate_fn_sel_r_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = 70, HOLD = 0.00, SETUP = 0.00, OBS_DEPTH = 5 
+
+     INPUTS :
+         clk_gate_fn_sel_r_reg/CLK = clk 
+         clk_gate_fn_sel_r_reg/EN = n1965 
+         clk_gate_fn_sel_r_reg/TE = n4302 
+
+     OUTPUTS :
+         clk_gate_fn_sel_r_reg/ENCLK = net5217 
+
+ Clock Gating Bank : clk_gate_iot_in_r_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = 70, HOLD = 0.00, SETUP = 0.00, OBS_DEPTH = 5 
+
+     INPUTS :
+         clk_gate_iot_in_r_reg/CLK = clk 
+         clk_gate_iot_in_r_reg/EN = N1079 
+         clk_gate_iot_in_r_reg/TE = n4302 
+
+     OUTPUTS :
+         clk_gate_iot_in_r_reg/ENCLK = net5223 
+
+ Clock Gating Bank : clk_gate_iot_in_r_reg_0
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = 70, HOLD = 0.00, SETUP = 0.00, OBS_DEPTH = 5 
+
+     INPUTS :
+         clk_gate_iot_in_r_reg_0/CLK = clk 
+         clk_gate_iot_in_r_reg_0/EN = N1081 
+         clk_gate_iot_in_r_reg_0/TE = n4302 
+
+     OUTPUTS :
+         clk_gate_iot_in_r_reg_0/ENCLK = net5229 
+
+ Clock Gating Bank : clk_gate_iot_in_r_reg_1
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = 70, HOLD = 0.00, SETUP = 0.00, OBS_DEPTH = 5 
+
+     INPUTS :
+         clk_gate_iot_in_r_reg_1/CLK = clk 
+         clk_gate_iot_in_r_reg_1/EN = N1083 
+         clk_gate_iot_in_r_reg_1/TE = n4302 
+
+     OUTPUTS :
+         clk_gate_iot_in_r_reg_1/ENCLK = net5235 
+
+ Clock Gating Bank : clk_gate_iot_in_r_reg_2
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = 70, HOLD = 0.00, SETUP = 0.00, OBS_DEPTH = 5 
+
+     INPUTS :
+         clk_gate_iot_in_r_reg_2/CLK = clk 
+         clk_gate_iot_in_r_reg_2/EN = N1085 
+         clk_gate_iot_in_r_reg_2/TE = n4302 
+
+     OUTPUTS :
+         clk_gate_iot_in_r_reg_2/ENCLK = net5241 
+
+ Clock Gating Bank : clk_gate_iot_in_r_reg_3
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = 70, HOLD = 0.00, SETUP = 0.00, OBS_DEPTH = 5 
+
+     INPUTS :
+         clk_gate_iot_in_r_reg_3/CLK = clk 
+         clk_gate_iot_in_r_reg_3/EN = N1087 
+         clk_gate_iot_in_r_reg_3/TE = n4302 
+
+     OUTPUTS :
+         clk_gate_iot_in_r_reg_3/ENCLK = net5247 
+
+ Clock Gating Bank : clk_gate_iot_in_r_reg_4
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = 70, HOLD = 0.00, SETUP = 0.00, OBS_DEPTH = 5 
+
+     INPUTS :
+         clk_gate_iot_in_r_reg_4/CLK = clk 
+         clk_gate_iot_in_r_reg_4/EN = N1089 
+         clk_gate_iot_in_r_reg_4/TE = n4302 
+
+     OUTPUTS :
+         clk_gate_iot_in_r_reg_4/ENCLK = net5253 
+
+ Clock Gating Bank : clk_gate_iot_in_r_reg_5
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = 70, HOLD = 0.00, SETUP = 0.00, OBS_DEPTH = 5 
+
+     INPUTS :
+         clk_gate_iot_in_r_reg_5/CLK = clk 
+         clk_gate_iot_in_r_reg_5/EN = N1091 
+         clk_gate_iot_in_r_reg_5/TE = n4302 
+
+     OUTPUTS :
+         clk_gate_iot_in_r_reg_5/ENCLK = net5259 
+
+ Clock Gating Bank : clk_gate_iot_in_r_reg_6
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = 70, HOLD = 0.00, SETUP = 0.00, OBS_DEPTH = 5 
+
+     INPUTS :
+         clk_gate_iot_in_r_reg_6/CLK = clk 
+         clk_gate_iot_in_r_reg_6/EN = N1093 
+         clk_gate_iot_in_r_reg_6/TE = n4302 
+
+     OUTPUTS :
+         clk_gate_iot_in_r_reg_6/ENCLK = net5265 
+
+ Clock Gating Bank : clk_gate_iot_in_r_reg_7
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = 70, HOLD = 0.00, SETUP = 0.00, OBS_DEPTH = 5 
+
+     INPUTS :
+         clk_gate_iot_in_r_reg_7/CLK = clk 
+         clk_gate_iot_in_r_reg_7/EN = N1095 
+         clk_gate_iot_in_r_reg_7/TE = n4302 
+
+     OUTPUTS :
+         clk_gate_iot_in_r_reg_7/ENCLK = net5271 
+
+ Clock Gating Bank : clk_gate_iot_in_r_reg_8
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = 70, HOLD = 0.00, SETUP = 0.00, OBS_DEPTH = 5 
+
+     INPUTS :
+         clk_gate_iot_in_r_reg_8/CLK = clk 
+         clk_gate_iot_in_r_reg_8/EN = N1097 
+         clk_gate_iot_in_r_reg_8/TE = n4302 
+
+     OUTPUTS :
+         clk_gate_iot_in_r_reg_8/ENCLK = net5277 
+
+ Clock Gating Bank : clk_gate_iot_in_r_reg_9
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = 70, HOLD = 0.00, SETUP = 0.00, OBS_DEPTH = 5 
+
+     INPUTS :
+         clk_gate_iot_in_r_reg_9/CLK = clk 
+         clk_gate_iot_in_r_reg_9/EN = N1099 
+         clk_gate_iot_in_r_reg_9/TE = n4302 
+
+     OUTPUTS :
+         clk_gate_iot_in_r_reg_9/ENCLK = net5283 
+
+ Clock Gating Bank : clk_gate_iot_in_r_reg_10
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = 70, HOLD = 0.00, SETUP = 0.00, OBS_DEPTH = 5 
+
+     INPUTS :
+         clk_gate_iot_in_r_reg_10/CLK = clk 
+         clk_gate_iot_in_r_reg_10/EN = N1101 
+         clk_gate_iot_in_r_reg_10/TE = n4302 
+
+     OUTPUTS :
+         clk_gate_iot_in_r_reg_10/ENCLK = net5289 
+
+ Clock Gating Bank : clk_gate_iot_in_r_reg_11
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = 70, HOLD = 0.00, SETUP = 0.00, OBS_DEPTH = 5 
+
+     INPUTS :
+         clk_gate_iot_in_r_reg_11/CLK = clk 
+         clk_gate_iot_in_r_reg_11/EN = N1102 
+         clk_gate_iot_in_r_reg_11/TE = n4302 
+
+     OUTPUTS :
+         clk_gate_iot_in_r_reg_11/ENCLK = net5295 
+
+ Clock Gating Bank : clk_gate_iot_in_r_reg_12
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = 70, HOLD = 0.00, SETUP = 0.00, OBS_DEPTH = 5 
+
+     INPUTS :
+         clk_gate_iot_in_r_reg_12/CLK = clk 
+         clk_gate_iot_in_r_reg_12/EN = N1106 
+         clk_gate_iot_in_r_reg_12/TE = n4302 
+
+     OUTPUTS :
+         clk_gate_iot_in_r_reg_12/ENCLK = net5301 
+
+ Clock Gating Bank : clk_gate_iot_in_r_reg_13
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = 70, HOLD = 0.00, SETUP = 0.00, OBS_DEPTH = 5 
+
+     INPUTS :
+         clk_gate_iot_in_r_reg_13/CLK = clk 
+         clk_gate_iot_in_r_reg_13/EN = N1108 
+         clk_gate_iot_in_r_reg_13/TE = n4302 
+
+     OUTPUTS :
+         clk_gate_iot_in_r_reg_13/ENCLK = net5307 
+
+ Clock Gating Bank : clk_gate_iot_in_r_reg_14
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = 70, HOLD = 0.00, SETUP = 0.00, OBS_DEPTH = 5 
+
+     INPUTS :
+         clk_gate_iot_in_r_reg_14/CLK = clk 
+         clk_gate_iot_in_r_reg_14/EN = N1109 
+         clk_gate_iot_in_r_reg_14/TE = n4302 
+
+     OUTPUTS :
+         clk_gate_iot_in_r_reg_14/ENCLK = net5313 
+
+ Clock Gating Bank : clk_gate_iot_out1_r_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = 70, HOLD = 0.00, SETUP = 0.00, OBS_DEPTH = 5 
+
+     INPUTS :
+         clk_gate_iot_out1_r_reg/CLK = clk 
+         clk_gate_iot_out1_r_reg/EN = N1114 
+         clk_gate_iot_out1_r_reg/TE = n4302 
+
+     OUTPUTS :
+         clk_gate_iot_out1_r_reg/ENCLK = net5319 
+
+ Clock Gating Bank : clk_gate_iot_out1_r_reg_0
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = 70, HOLD = 0.00, SETUP = 0.00, OBS_DEPTH = 5 
+
+     INPUTS :
+         clk_gate_iot_out1_r_reg_0/CLK = clk 
+         clk_gate_iot_out1_r_reg_0/EN = N1115 
+         clk_gate_iot_out1_r_reg_0/TE = n4302 
+
+     OUTPUTS :
+         clk_gate_iot_out1_r_reg_0/ENCLK = net5325 
+
+ Clock Gating Bank : clk_gate_iot_out1_r_reg_1
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = 70, HOLD = 0.00, SETUP = 0.00, OBS_DEPTH = 5 
+
+     INPUTS :
+         clk_gate_iot_out1_r_reg_1/CLK = clk 
+         clk_gate_iot_out1_r_reg_1/EN = N1115 
+         clk_gate_iot_out1_r_reg_1/TE = n4302 
+
+     OUTPUTS :
+         clk_gate_iot_out1_r_reg_1/ENCLK = net5331 
+
+ Clock Gating Bank : clk_gate_iot_out2_r_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = 70, HOLD = 0.00, SETUP = 0.00, OBS_DEPTH = 5 
+
+     INPUTS :
+         clk_gate_iot_out2_r_reg/CLK = clk 
+         clk_gate_iot_out2_r_reg/EN = N1121 
+         clk_gate_iot_out2_r_reg/TE = n4302 
+
+     OUTPUTS :
+         clk_gate_iot_out2_r_reg/ENCLK = net5337 
+
+ Clock Gating Bank : clk_gate_iot_out2_r_reg_0
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = 70, HOLD = 0.00, SETUP = 0.00, OBS_DEPTH = 5 
+
+     INPUTS :
+         clk_gate_iot_out2_r_reg_0/CLK = clk 
+         clk_gate_iot_out2_r_reg_0/EN = n4300 
+         clk_gate_iot_out2_r_reg_0/TE = n4302 
+
+     OUTPUTS :
+         clk_gate_iot_out2_r_reg_0/ENCLK = net5343 
+--------------------------------------------------------------------------------
+
+
+                             Clock Gating Summary
+          ------------------------------------------------------------
+          |    Number of Clock gating elements    |       24         |
+          |                                       |                  |
+          |    Number of Gated registers          |   398 (99.75%)   |
+          |                                       |                  |
+          |    Number of Ungated registers        |     1 (0.25%)    |
+          |                                       |                  |
+          |    Total number of registers          |      399         |
+          ------------------------------------------------------------
+
+
+
+                             Clock Gating Report by Origin
+          +-------------------------------------------------+------------------+
+          |                                                 |    Actual (%)    |
+          |                                                 |    Count         |
+          +-------------------------------------------------+------------------+
+          |  Number of tool-inserted clock gating elements  |    24 (100.00%)  |
+          |                                                 |                  |
+          |  Number of pre-existing clock gating elements   |     0 (0.00%)    |
+          |                                                 |                  |
+          |  Number of gated registers                      |   398 (99.75%)   |
+          |                                                 |                  |
+          |  Number of tool-inserted gated registers        |   398 (99.75%)   |
+          |                                                 |                  |
+          |  Number of pre-existing gated registers         |     0 (0.00%)    |
+          |                                                 |                  |
+          |  Number of ungated registers                    |     1 (0.25%)    |
+          |                                                 |                  |
+          |  Number of registers                            |      399         |
+          +-------------------------------------------------+------------------+
+
+
+
+1

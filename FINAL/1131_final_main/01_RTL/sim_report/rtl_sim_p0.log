@@ -1,0 +1,201 @@
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Sun Dec 15 23:05:50 2024
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file '../08_HIDDEN_TESTBED/testbed.sv'
+Parsing included file '../08_HIDDEN_TESTBED/pattern/tb_dat_combine.sv'.
+Back to file '../08_HIDDEN_TESTBED/testbed.sv'.
+Parsing design file './ver5_1/ed25519.sv'
+Parsing design file './ver5_1/ALU.v'
+Parsing design file './ver5_1/RegFile.v'
+Parsing design file './ver5_1/LUTFile.v'
+Parsing design file './ver5_1/Mul.v'
+Parsing design file './ver5_1/ModQ.v'
+Parsing design file './ver5_1/ModularAdd.v'
+Parsing design file './ver5_1/ModularSub.v'
+Top Level Modules:
+       testbench
+TimeScale is 1 ns / 10 ps
+Starting vcs inline pass...
+
+131 modules and 0 UDP read.
+recompiling package dat_0
+recompiling package dat_1
+recompiling package dat_2
+recompiling package dat_3
+recompiling package dat_4
+recompiling package dat_5
+recompiling package dat_6
+recompiling package dat_7
+recompiling package dat_8
+recompiling package dat_9
+recompiling package dat_10
+recompiling package dat_11
+recompiling package dat_12
+recompiling package dat_13
+recompiling package dat_14
+recompiling package dat_15
+recompiling package dat_16
+recompiling package dat_17
+recompiling package dat_18
+recompiling package dat_19
+recompiling package dat_20
+recompiling package dat_21
+recompiling package dat_22
+recompiling package dat_23
+recompiling package dat_24
+recompiling package dat_25
+recompiling package dat_26
+recompiling package dat_27
+recompiling package dat_28
+recompiling package dat_29
+recompiling package dat_30
+recompiling package dat_31
+recompiling package dat_32
+recompiling package dat_33
+recompiling package dat_34
+recompiling package dat_35
+recompiling package dat_36
+recompiling package dat_37
+recompiling package dat_38
+recompiling package dat_39
+recompiling package dat_40
+recompiling package dat_41
+recompiling package dat_42
+recompiling package dat_43
+recompiling package dat_44
+recompiling package dat_45
+recompiling package dat_46
+recompiling package dat_47
+recompiling package dat_48
+recompiling package dat_49
+50 of 131 modules done
+recompiling package dat_50
+recompiling package dat_51
+recompiling package dat_52
+recompiling package dat_53
+recompiling package dat_54
+recompiling package dat_55
+recompiling package dat_56
+recompiling package dat_57
+recompiling package dat_58
+recompiling package dat_59
+recompiling package dat_60
+recompiling package dat_61
+recompiling package dat_62
+recompiling package dat_63
+recompiling package dat_64
+recompiling package dat_65
+recompiling package dat_66
+recompiling package dat_67
+recompiling package dat_68
+recompiling package dat_69
+recompiling package dat_70
+recompiling package dat_71
+recompiling package dat_72
+recompiling package dat_73
+recompiling package dat_74
+recompiling package dat_75
+recompiling package dat_76
+recompiling package dat_77
+recompiling package dat_78
+recompiling package dat_79
+recompiling package dat_80
+recompiling package dat_81
+recompiling package dat_82
+recompiling package dat_83
+recompiling package dat_84
+recompiling package dat_85
+recompiling package dat_86
+recompiling package dat_87
+recompiling package dat_88
+recompiling package dat_89
+recompiling package dat_90
+recompiling package dat_91
+recompiling package dat_92
+recompiling package dat_93
+recompiling package dat_94
+recompiling package dat_95
+recompiling package dat_96
+recompiling package dat_97
+recompiling package dat_98
+recompiling package dat_99
+100 of 131 modules done
+recompiling package dat_100
+recompiling package dat_101
+recompiling package dat_102
+recompiling package dat_103
+recompiling package dat_104
+recompiling package dat_105
+recompiling package dat_106
+recompiling package dat_107
+recompiling package dat_108
+recompiling package dat_109
+recompiling package dat_110
+recompiling package dat_111
+recompiling package dat_112
+recompiling package dat_113
+recompiling package dat_114
+recompiling package dat_115
+recompiling package dat_116
+recompiling package dat_117
+recompiling package dat_118
+recompiling package dat_119
+recompiling package dat_120
+recompiling package dat_121
+recompiling package dat_122
+recompiling package dat_123
+recompiling package dat_124
+recompiling package dat_125
+recompiling package dat_126
+recompiling package dat_127
+recompiling package dat_128
+recompiling package dat_129
+recompiling module testbench
+All of 131 modules done
+make: Warning: File `filelist.cu' has modification time 30 s in the future
+make[1]: Warning: File `filelist.cu' has modification time 30 s in the future
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Warning: File `filelist.cu' has modification time 30 s in the future
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/usr/cad/synopsys/vcs/2022.06/linux64/lib -L/usr/cad/synopsys/vcs/2022.06/linux64/lib  -Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _3568_archive_1.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc -lvfs /usr/cad/synopsys/verdi/cur/share/PLI/VCS/LINUX64/pli.a    -lvcsnew -lsimprofile -luclinative /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_save_restore_new.o -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make: warning:  Clock skew detected.  Your build may be incomplete.
+Notice: timing checks disabled with +notimingcheck at compile-time
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Dec 15 23:06 2024
+**********************************************
+==> Send Input Done...
+==> Waiting Calculation...
+==> Receive Output Done...
+----------------------------------------------
+                 PAT 0 PASS!                 
+----------------------------------------------
+Simulation Cycle:   3685, Time:    25795.00 ns
+**********************************************
+$finish called from file "../08_HIDDEN_TESTBED/testbed.sv", line 502.
+$finish at simulation time              2585100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 25851000 ps
+CPU Time:      0.920 seconds;       Data structure size:   0.1Mb
+Sun Dec 15 23:06:25 2024
+CPU time: 2.151 seconds to compile + .862 seconds to elab + .559 seconds to link + .965 seconds in simulation

@@ -1,0 +1,1 @@
+vcs -full64 -R  ../00_TESTBED/testbench_patterns_test.v ./alu.v +v2k -sverilog -debug_access+all +define+$1 +define+$2 | tee sim.log

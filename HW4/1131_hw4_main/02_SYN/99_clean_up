@@ -1,0 +1,5 @@
+rm -rf *.pvl
+rm -rf *.syn
+rm -rf *.mr
+rm -rf *.svf
+rm -rf alib-52

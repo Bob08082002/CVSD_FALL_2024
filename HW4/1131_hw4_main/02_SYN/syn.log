@@ -1,0 +1,1067 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+                 Version U-2022.12 for linux64 - Nov 22, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+# Setting environment
+sh mkdir -p Netlist
+sh mkdir -p Report
+set company {NTUGIEE}
+NTUGIEE
+set designer {Student}
+Student
+set search_path      ". /home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db $search_path ../ ./"
+. /home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db . /home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db . /usr/cad/synopsys/synthesis/cur/libraries/syn /usr/cad/synopsys/synthesis/cur/dw/syn_ver /usr/cad/synopsys/synthesis/cur/dw/sim_ver ../ ./
+set target_library   "slow.db"
+slow.db
+set link_library     "* $target_library dw_foundation.sldb"
+* slow.db dw_foundation.sldb
+set symbol_library   "tsmc13.sdb generic.sdb"
+tsmc13.sdb generic.sdb
+set synthetic_library "dw_foundation.sldb"
+dw_foundation.sldb
+set default_schematic_options {-size infinite}
+-size infinite
+# Import Design
+set DESIGN "IOTDF"
+IOTDF
+set hdlin_translate_off_skip_text "TRUE"
+Information: Variable 'hdlin_translate_off_skip_text' is obsolete and is being ignored. (INFO-100)
+TRUE
+set edifout_netlist_only "TRUE"
+TRUE
+set verilogout_no_tri true
+true
+set hdlin_enable_presto_for_vhdl "TRUE"
+Information: Variable 'hdlin_enable_presto_for_vhdl' is obsolete and is being ignored. (INFO-100)
+Information: Variable 'hdlin_enable_presto_for_vhdl' is obsolete and is being ignored. (INFO-100)
+TRUE
+set sh_enable_line_editing true
+true
+set sh_line_editing_mode emacs
+emacs
+history keep 100
+100
+alias h history
+analyze -format sverilog "flist.sv"
+Running PRESTO HDLC
+Compiling source file ./flist.sv
+Opening include file ../01_RTL/IOTDF.v
+Opening include file ../01_RTL/Sub_Key.v
+Opening include file ../01_RTL/F_Function.v
+Opening include file ../01_RTL/CRC_Gen.v
+Presto compilation completed successfully.
+Loading db file '/home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/slow.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb'
+1
+elaborate $DESIGN
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
+  Loading link library 'slow'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  ../01_RTL/IOTDF.v:283: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 331 in file
+	'../01_RTL/IOTDF.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           334            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine IOTDF line 90 in file
+		'../01_RTL/IOTDF.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   cnt_read_r_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine IOTDF line 98 in file
+		'../01_RTL/IOTDF.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   cnt_round_r_reg   | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine IOTDF line 110 in file
+		'../01_RTL/IOTDF.v'.
+===================================================================================
+|      Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===================================================================================
+| start_output_flag_r_reg | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===================================================================================
+
+Inferred memory devices in process
+	in routine IOTDF line 121 in file
+		'../01_RTL/IOTDF.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    fn_sel_r_reg     | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine IOTDF line 126 in file
+		'../01_RTL/IOTDF.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     valid_r_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine IOTDF line 141 in file
+		'../01_RTL/IOTDF.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    iot_in_r_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine IOTDF line 169 in file
+		'../01_RTL/IOTDF.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   iot_out1_r_reg    | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine IOTDF line 201 in file
+		'../01_RTL/IOTDF.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   iot_out2_r_reg    | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine IOTDF line 323 in file
+		'../01_RTL/IOTDF.v'.
+=======================================================================================
+|        Register Name        |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=======================================================================================
+| Is_in_biggerthan_out2_r_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| Is_in_biggerthan_out1_r_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+=======================================================================================
+Presto compilation completed successfully. (IOTDF)
+Elaborated 1 design.
+Current design is now 'IOTDF'.
+Information: Building the design 'Sub_Key'. (HDL-193)
+
+Statistics for case statements in always block at line 28 in file
+	'../01_RTL/Sub_Key.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            29            |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (Sub_Key)
+Information: Building the design 'F_Function'. (HDL-193)
+
+Statistics for case statements in always block at line 44 in file
+	'../01_RTL/F_Function.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            45            |    auto/auto     |
+|            47            |    auto/auto     |
+|            67            |    auto/auto     |
+|            87            |    auto/auto     |
+|           107            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 129 in file
+	'../01_RTL/F_Function.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           130            |    auto/auto     |
+|           132            |    auto/auto     |
+|           152            |    auto/auto     |
+|           172            |    auto/auto     |
+|           192            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 214 in file
+	'../01_RTL/F_Function.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           215            |    auto/auto     |
+|           217            |    auto/auto     |
+|           237            |    auto/auto     |
+|           257            |    auto/auto     |
+|           277            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 299 in file
+	'../01_RTL/F_Function.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           300            |    auto/auto     |
+|           302            |    auto/auto     |
+|           322            |    auto/auto     |
+|           342            |    auto/auto     |
+|           362            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 384 in file
+	'../01_RTL/F_Function.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           385            |    auto/auto     |
+|           387            |    auto/auto     |
+|           407            |    auto/auto     |
+|           427            |    auto/auto     |
+|           447            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 469 in file
+	'../01_RTL/F_Function.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           470            |    auto/auto     |
+|           472            |    auto/auto     |
+|           492            |    auto/auto     |
+|           512            |    auto/auto     |
+|           532            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 554 in file
+	'../01_RTL/F_Function.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           555            |    auto/auto     |
+|           557            |    auto/auto     |
+|           577            |    auto/auto     |
+|           597            |    auto/auto     |
+|           617            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 639 in file
+	'../01_RTL/F_Function.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           640            |    auto/auto     |
+|           642            |    auto/auto     |
+|           662            |    auto/auto     |
+|           682            |    auto/auto     |
+|           702            |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (F_Function)
+Information: Building the design 'CRC_Gen'. (HDL-193)
+Presto compilation completed successfully. (CRC_Gen)
+1
+current_design [get_designs $DESIGN]
+Current design is 'IOTDF'.
+{IOTDF}
+link
+
+  Linking design 'IOTDF'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (4 designs)               /home/raid7_2/user13/r13015/CVSD/HW4/1131_hw4/02_SYN/IOTDF.db, etc
+  slow (library)              /home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/slow.db
+  dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb
+
+1
+# MODIFY to your sdc path
+source -echo -verbose ./IOTDF_DC.sdc
+# operating conditions and boundary conditions #
+create_clock -name clk  -period 8.5   [get_ports  clk]      ;#Modify period by yourself
+1
+set_dont_touch_network      [all_clocks]
+1
+set_fix_hold                [all_clocks]
+1
+set_clock_uncertainty  0.1  [all_clocks]
+1
+set_clock_latency      1.0  [all_clocks]
+1
+set_ideal_network           [get_ports clk]
+1
+#Don't touch the basic env setting as below
+set_input_delay  -max 1.0   -clock clk [remove_from_collection [all_inputs]  {clk}]  
+1
+set_input_delay  -min 0.0   -clock clk [remove_from_collection [all_inputs]  {clk}] 
+1
+set_output_delay -max 1.0   -clock clk [all_outputs]
+1
+set_output_delay -min 0.0   -clock clk [all_outputs] 
+1
+set_load         0.01  [all_outputs]
+1
+set_drive        0.1   [all_inputs]
+1
+set_operating_conditions -max_library slow -max slow
+Using operating conditions 'slow' found in library 'slow'.
+1
+set_max_fanout 10 [all_inputs]
+1
+1
+# Compile Design
+current_design [get_designs ${DESIGN}]
+Current design is 'IOTDF'.
+{IOTDF}
+check_design > Report/check_design.txt
+check_timing > Report/check_timing.txt
+set high_fanout_net_threshold 0
+0
+#compile
+uniquify
+1
+ungroup -all
+1
+set_fix_multiple_port_nets -all -buffer_constants [get_designs *]
+1
+set_clock_gating_style \
+	-max_fanout 70 \
+	-pos {nand} \
+	-control_point before \
+	-control_signal scan_enable
+
+Current clock gating style....
+Sequential cell: latch
+Minimum bank bitwidth: 3
+Minimum bank bitwidth for enhanced clock gating: 6
+Maximum fanout: 70
+Setup time for clock gate: 0.000000
+Hold time for clock gate: 0.000000
+Clock gating circuitry (positive edge): nand
+ Note: inverter between clock gating circuitry 
+       and (positive edge) register clock pin.
+Clock gating circuitry (negative edge): or
+ Note: inverter between clock gating circuitry 
+       and (negative edge) register clock pin.
+Control point insertion: before
+Control signal for control point: scan_enable
+Observation point insertion: false
+Observation logic depth: 5
+1
+set_host_options -max_cores 10
+Warning: You requested 10 cores. However, load on host cad38 is 10.32. Tool will ignore the request and use 6 cores. (UIO-231)
+1
+compile_ultra -gate_clock
+Information: Performing power optimization. (PWR-850)
+Analyzing: "/home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/slow.db"
+Library analysis succeeded.
+Information: Running optimization using a maximum of 6 cores. (OPT-1500)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | U-2022.12-DWBB_202212.0 |     *     |
+| Licensed DW Building Blocks        | U-2022.12-DWBB_202212.0 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Comand Line  | compile_ultra -gate_clock                                                         |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 3635                                   |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 399                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 1261                                   |
+| Number of Dont Touch Nets                               | 1                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all -buffer_constants                 |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 3 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'IOTDF'
+
+Loaded alib file './alib-52/slow.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping 0 of 25 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'IOTDF'
+Information: Added key list 'DesignWare' to design 'IOTDF'. (DDB-72)
+ Implement Synthetic for 'IOTDF'.
+  Processing 'SNPS_CLOCK_GATE_HIGH_IOTDF_0'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1' in the library 'slow' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_3, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_4, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_5, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_6, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_7, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_8, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_9, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_10, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_11, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_13, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_14, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_15, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_16, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_17, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_18, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_19, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_20, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_21, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_22, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_23, since there are no registers. (PWR-806)
+Information: Performing clock-gating on design IOTDF. (PWR-730)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:34   42334.9      0.00       0.0      72.8                           36916452.0000      0.00  
+    0:00:34   42289.0      0.00       0.0      72.8                           36869832.0000      0.00  
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:00:35   42491.0      0.00       0.0      72.8                           37079620.0000      0.00  
+    0:00:36   42491.0      0.00       0.0      72.8                           37079620.0000      0.00  
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:41   29331.1      0.00       0.0      57.3                           15904187.0000      0.00  
+    0:00:41   29331.1      0.00       0.0      57.3                           15904187.0000      0.00  
+    0:00:41   29331.1      0.00       0.0      57.3                           15904187.0000      0.00  
+    0:00:41   29331.1      0.00       0.0      57.3                           15904187.0000      0.00  
+    0:00:42   29329.4      0.00       0.0      57.3                           15904395.0000      0.00  
+    0:00:42   29329.4      0.00       0.0      57.3                           15904395.0000      0.00  
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:46   29188.5      0.00       0.0      56.0                           15818238.0000      0.00  
+    0:00:46   29188.5      0.00       0.0      56.0                           15818238.0000      0.00  
+    0:00:46   29188.5      0.00       0.0      56.0                           15818238.0000      0.00  
+    0:00:46   29188.5      0.00       0.0      56.0                           15726614.0000      0.00  
+    0:00:46   29188.5      0.00       0.0      56.0                           15726614.0000      0.00  
+    0:00:46   29188.5      0.00       0.0      56.0                           15726614.0000      0.00  
+    0:00:46   29188.5      0.00       0.0      56.0                           15726614.0000      0.00  
+    0:00:46   29188.5      0.00       0.0      56.0                           15726614.0000      0.00  
+    0:00:46   29188.5      0.00       0.0      56.0                           15726614.0000      0.00  
+    0:00:46   29188.5      0.00       0.0      56.0                           15726614.0000      0.00  
+    0:00:46   29188.5      0.00       0.0      56.0                           15726614.0000      0.00  
+    0:00:46   29188.5      0.00       0.0      56.0                           15726614.0000      0.00  
+    0:00:46   29188.5      0.00       0.0      56.0                           15726614.0000      0.00  
+    0:00:46   29188.5      0.00       0.0      56.0                           15726614.0000      0.00  
+    0:00:46   29188.5      0.00       0.0      56.0                           15726614.0000      0.00  
+    0:00:46   29188.5      0.00       0.0      56.0                           15726614.0000      0.00  
+    0:00:46   29188.5      0.00       0.0      56.0                           15726614.0000      0.00  
+    0:00:46   29188.5      0.00       0.0      56.0                           15726614.0000      0.00  
+    0:00:47   29188.5      0.00       0.0      56.0                           15726614.0000      0.00  
+    0:00:47   29188.5      0.00       0.0      56.0                           15726614.0000      0.00  
+    0:00:47   29188.5      0.00       0.0      56.0                           15726614.0000      0.00  
+    0:00:47   29188.5      0.00       0.0      56.0                           15726614.0000      0.00  
+
+
+  Beginning Design Rule Fixing  (max_fanout)
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:47   29188.5      0.00       0.0      56.0                           15726614.0000      0.00  
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+    0:00:47   29249.6      0.00       0.0       0.0                           15753107.0000      0.00  
+    0:00:47   29249.6      0.00       0.0       0.0                           15753107.0000      0.00  
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:47   29249.6      0.00       0.0       0.0                           15753107.0000      0.00  
+    0:00:47   29249.6      0.00       0.0       0.0                           15753107.0000      0.00  
+    0:00:47   29249.6      0.00       0.0       0.0                           15753107.0000      0.00  
+    0:00:47   29249.6      0.00       0.0       0.0                           15753107.0000      0.00  
+    0:00:48   29258.1      0.00       0.0       0.0                           15176609.0000      0.00  
+    0:00:48   29258.1      0.00       0.0       0.0                           15176609.0000      0.00  
+    0:00:48   29258.1      0.00       0.0       0.0                           15176609.0000      0.00  
+    0:00:48   29258.1      0.00       0.0       0.0                           15176609.0000      0.00  
+    0:00:48   29258.1      0.00       0.0       0.0                           15176609.0000      0.00  
+    0:00:48   29258.1      0.00       0.0       0.0                           15176609.0000      0.00  
+    0:00:48   29258.1      0.00       0.0       0.0                           15176609.0000      0.00  
+    0:00:48   29258.1      0.00       0.0       0.0                           15176609.0000      0.00  
+    0:00:48   29258.1      0.00       0.0       0.0                           15176609.0000      0.00  
+    0:00:48   29258.1      0.00       0.0       0.0                           15176609.0000      0.00  
+    0:00:48   29258.1      0.00       0.0       0.0                           15176609.0000      0.00  
+    0:00:48   29258.1      0.00       0.0       0.0                           15176609.0000      0.00  
+    0:00:48   29258.1      0.00       0.0       0.0                           15176609.0000      0.00  
+    0:00:48   29258.1      0.00       0.0       0.0                           15176609.0000      0.00  
+    0:00:48   29258.1      0.00       0.0       0.0                           15176609.0000      0.00  
+    0:00:48   29258.1      0.00       0.0       0.0                           15176609.0000      0.00  
+    0:00:48   29258.1      0.00       0.0       0.0                           15176609.0000      0.00  
+    0:00:48   29258.1      0.00       0.0       0.0                           15176609.0000      0.00  
+    0:00:48   29258.1      0.00       0.0       0.0                           15176609.0000      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:49   29261.5      0.00       0.0       0.0                           15177166.0000      0.00  
+    0:00:50   29249.6      0.00       0.0       0.0                           14467051.0000      0.00  
+    0:00:50   29249.6      0.00       0.0       0.0                           14467051.0000      0.00  
+    0:00:50   29249.6      0.00       0.0       0.0                           14467051.0000      0.00  
+    0:00:50   29254.7      0.00       0.0       0.0                           14456302.0000      0.00  
+    0:00:52   29230.9      0.00       0.0       0.0                           14410640.0000      0.00  
+    0:00:52   29230.9      0.00       0.0       0.0                           14410640.0000      0.00  
+    0:00:52   29230.9      0.00       0.0       0.0                           14410640.0000      0.00  
+    0:00:52   29230.9      0.00       0.0       0.0                           14410640.0000      0.00  
+    0:00:52   29230.9      0.00       0.0       0.0                           14410640.0000      0.00  
+    0:00:52   29230.9      0.00       0.0       0.0                           14410640.0000      0.00  
+    0:00:53   29227.5      0.00       0.0       0.0                           14413212.0000      0.00  
+Loading db file '/home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/slow.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+optimize_netlist -area
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Running optimization using a maximum of 6 cores. (OPT-1500)
+
+Information: There are 24 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Updating timing information
+Information: The library cell 'HOLDX1' in the library 'slow' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+
+  Beginning Area Optimization
+  -----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:03   29227.5      0.00       0.0       0.0                           14413212.0000      0.00  
+    0:00:08   29208.9      0.00       0.0       0.0                           14391687.0000      0.00  
+Loading db file '/home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/slow.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+compile_ultra -inc -gate_clock
+Information: Starting from 2013.12 release, constant propagation is enabled even when boundary optimization is disabled. (OPT-1318)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Running optimization using a maximum of 6 cores. (OPT-1500)
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+| Comand Line  | compile_ultra -incremental -gate_clock                                            |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 2950                                   |
+| Number of User Hierarchies                              | 24                                     |
+| Sequential Cell Count                                   | 423                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 48                                     |
+| Number of Dont Touch Nets                               | 97                                     |
+| Number of Size Only Cells                               | 48                                     |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all -buffer_constants                 |
+====================================================================================================
+
+Information: There are 24 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1' in the library 'slow' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_23, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_22, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_19, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_3, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_4, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_5, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_6, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_7, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_8, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_9, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_10, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_14, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_15, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_16, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_17, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_18, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_20, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_21, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_13, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_IOTDF_11, since there are no registers. (PWR-806)
+Information: Performing clock-gating on design IOTDF. (PWR-730)
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:03   29208.9      0.00       0.0       0.0                           14391687.0000      0.00  
+    0:00:03   29208.9      0.00       0.0       0.0                           14391687.0000      0.00  
+
+  Beginning Mapping Optimizations  (Ultra High effort)  (Incremental)
+  -------------------------------
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:05   29205.5      0.00       0.0       0.0                           14391129.0000      0.00  
+    0:00:05   29205.5      0.00       0.0       0.0                           14391129.0000      0.00  
+    0:00:05   29205.5      0.00       0.0       0.0                           14387672.0000      0.00  
+    0:00:05   29205.5      0.00       0.0       0.0                           14387672.0000      0.00  
+    0:00:05   29205.5      0.00       0.0       0.0                           14387672.0000      0.00  
+    0:00:05   29205.5      0.00       0.0       0.0                           14387672.0000      0.00  
+    0:00:05   29205.5      0.00       0.0       0.0                           14387672.0000      0.00  
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:05   29205.5      0.00       0.0       0.0                           14387672.0000      0.00  
+    0:00:05   29205.5      0.00       0.0       0.0                           14387672.0000      0.00  
+    0:00:05   29205.5      0.00       0.0       0.0                           14387672.0000      0.00  
+    0:00:05   29205.5      0.00       0.0       0.0                           14387672.0000      0.00  
+    0:00:05   29205.5      0.00       0.0       0.0                           14387672.0000      0.00  
+    0:00:06   29161.3      0.00       0.0       0.0                           14376731.0000      0.00  
+
+
+  Beginning Design Rule Fixing  (min_path)
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:07   29161.3      0.00       0.0       0.0                           14376731.0000     -0.08  
+    0:00:07   29161.3      0.00       0.0       0.0                           14376731.0000     -0.08  
+    0:00:07   29161.3      0.00       0.0       0.0                           14376731.0000     -0.08  
+    0:00:07   29161.3      0.00       0.0       0.0                           14376731.0000     -0.08  
+    0:00:07   29161.3      0.00       0.0       0.0                           14376731.0000     -0.08  
+    0:00:07   29161.3      0.00       0.0       0.0                           14376731.0000     -0.08  
+    0:00:07   29161.3      0.00       0.0       0.0                           14376731.0000     -0.08  
+    0:00:07   29161.3      0.00       0.0       0.0                           14376731.0000     -0.08  
+    0:00:07   29161.3      0.00       0.0       0.0                           14376731.0000     -0.08  
+    0:00:07   29161.3      0.00       0.0       0.0                           14376731.0000     -0.08  
+    0:00:07   29161.3      0.00       0.0       0.0                           14376731.0000     -0.08  
+    0:00:07   29188.5      0.00       0.0       0.0                           14381188.0000      0.00  
+    0:00:08   29188.5      0.00       0.0       0.0                           14381188.0000      0.00  
+    0:00:08   29188.5      0.00       0.0       0.0                           14381188.0000      0.00  
+    0:00:08   29188.5      0.00       0.0       0.0                           14381188.0000      0.00  
+    0:00:08   29188.5      0.00       0.0       0.0                           14381188.0000      0.00  
+    0:00:08   29188.5      0.00       0.0       0.0                           14381188.0000      0.00  
+    0:00:08   29188.5      0.00       0.0       0.0                           14381188.0000      0.00  
+    0:00:08   29188.5      0.00       0.0       0.0                           14381188.0000      0.00  
+    0:00:08   29188.5      0.00       0.0       0.0                           14381188.0000      0.00  
+    0:00:08   29188.5      0.00       0.0       0.0                           14381188.0000      0.00  
+    0:00:08   29191.9      0.00       0.0       0.0                           14381745.0000      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:08   29191.9      0.00       0.0       0.0                           14381745.0000      0.00  
+    0:00:09   29191.9      0.00       0.0       0.0                           14381745.0000      0.00  
+    0:00:11   29168.1      0.00       0.0       0.0                           14360367.0000     -0.28  
+    0:00:11   29168.1      0.00       0.0       0.0                           14360367.0000     -0.28  
+    0:00:12   29168.1      0.00       0.0       0.0                           14360367.0000     -0.28  
+    0:00:12   29168.1      0.00       0.0       0.0                           14360367.0000     -0.28  
+Loading db file '/home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/slow.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+optimize_netlist -area
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Running optimization using a maximum of 6 cores. (OPT-1500)
+
+Information: There are 24 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Updating timing information
+Information: The library cell 'HOLDX1' in the library 'slow' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+
+  Beginning Area Optimization
+  -----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:03   29168.1      0.00       0.0       0.0                           14360367.0000      0.00  
+    0:00:06   29164.7      0.00       0.0       0.0                           14347710.0000      0.00  
+Loading db file '/home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/slow.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+# Report Output
+current_design [get_designs ${DESIGN}]
+Current design is 'IOTDF'.
+{IOTDF}
+report_timing > "./Report/${DESIGN}_syn.timing"
+report_area > "./Report/${DESIGN}_syn.area"
+report_clock_gating -gating_elements > "./Report/${DESIGN}_syn.gating"
+# Output Design
+current_design [get_designs ${DESIGN}]
+Current design is 'IOTDF'.
+{IOTDF}
+set bus_inference_style {%s[%d]}
+%s[%d]
+set bus_naming_style {%s[%d]}
+%s[%d]
+set hdlout_internal_busses true
+true
+change_names -hierarchy -rule verilog
+1
+define_name_rules name_rule -allowed {a-z A-Z 0-9 _} -max_length 255 -type cell
+1
+define_name_rules name_rule -allowed {a-z A-Z 0-9 _[]} -max_length 255 -type net
+1
+define_name_rules name_rule -map {{"\\*cell\\*" "cell"}}
+1
+define_name_rules name_rule -case_insensitive
+1
+change_names -hierarchy -rules name_rule
+1
+remove_unconnected_ports -blast_buses [get_cells -hierarchical *]
+1
+set verilogout_higher_designs_first true
+true
+write -format ddc     -hierarchy -output "./Netlist/${DESIGN}_syn.ddc"
+Writing ddc file './Netlist/IOTDF_syn.ddc'.
+1
+write -format verilog -hierarchy -output "../03_GATE/${DESIGN}_syn.v"
+Writing verilog file '/home/raid7_2/user13/r13015/CVSD/HW4/1131_hw4/03_GATE/IOTDF_syn.v'.
+1
+write_sdf -version 2.1  -context verilog -load_delay cell ../03_GATE/${DESIGN}_syn.sdf
+Information: Writing timing information to file '/home/raid7_2/user13/r13015/CVSD/HW4/1131_hw4/03_GATE/IOTDF_syn.sdf'. (WT-3)
+1
+write_sdc  ./Netlist/${DESIGN}_syn.sdc -version 1.8
+1
+report_timing
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IOTDF
+Version: U-2022.12
+Date   : Mon Nov 18 19:32:58 2024
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: cnt_read_r_reg_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: iot_out1_r_reg_73_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  cnt_read_r_reg_3_/CK (DFFRX1)            0.00       1.00 r
+  cnt_read_r_reg_3_/Q (DFFRX1)             0.67       1.67 r
+  U3109/Y (NAND2XL)                        0.14       1.81 f
+  U2418/Y (NOR3XL)                         0.85       2.66 r
+  U3061/Y (INVX1)                          0.56       3.22 f
+  U3235/Y (OAI22XL)                        0.26       3.48 r
+  U2954/Y (NOR4XL)                         0.11       3.58 f
+  U2953/Y (NAND4XL)                        0.24       3.82 r
+  U2835/Y (NOR2XL)                         0.13       3.95 f
+  U3278/Y (OAI21XL)                        0.19       4.14 r
+  U2833/Y (AOI21XL)                        0.10       4.23 f
+  U3279/Y (OA21XL)                         0.25       4.48 f
+  U3280/Y (AOI2BB2X1)                      0.24       4.72 f
+  U3281/Y (AOI2BB2X1)                      0.19       4.91 r
+  U2416/Y (NOR3XL)                         0.15       5.06 f
+  U2411/Y (AO22X1)                         0.71       5.76 f
+  U3091/Y (INVX3)                          0.64       6.40 r
+  U2424/Y (AND3X1)                         0.84       7.24 r
+  U2423/Y (CLKINVX2)                       0.97       8.21 f
+  U4518/Y (AO22X1)                         0.51       8.72 f
+  U2615/Y (AOI211XL)                       0.21       8.93 r
+  U2538/Y (OAI211XL)                       0.11       9.04 f
+  iot_out1_r_reg_73_/D (DFFQX1)            0.00       9.04 f
+  data arrival time                                   9.04
+
+  clock clk (rise edge)                    8.50       8.50
+  clock network delay (ideal)              1.00       9.50
+  clock uncertainty                       -0.10       9.40
+  iot_out1_r_reg_73_/CK (DFFQX1)           0.00       9.40 r
+  library setup time                      -0.27       9.13
+  data required time                                  9.13
+  -----------------------------------------------------------
+  data required time                                  9.13
+  data arrival time                                  -9.04
+  -----------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+1
+report_area
+ 
+****************************************
+Report : area
+Design : IOTDF
+Version: U-2022.12
+Date   : Mon Nov 18 19:32:58 2024
+****************************************
+
+Library(s) Used:
+
+    slow (File: /home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/slow.db)
+
+Number of ports:                          240
+Number of nets:                          3062
+Number of cells:                         2930
+Number of combinational cells:           2481
+Number of sequential cells:               423
+Number of macros/black boxes:               0
+Number of buf/inv:                        405
+Number of references:                      83
+
+Combinational area:              18418.487569
+Buf/Inv area:                     1386.775778
+Noncombinational area:           10746.239527
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 29164.727095
+Total area:                 undefined
+1
+check_design
+ 
+****************************************
+check_design summary:
+Version:     U-2022.12
+Date:        Mon Nov 18 19:32:58 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                              24
+    Connected to power or ground (LINT-32)                         24
+--------------------------------------------------------------------------------
+
+Warning: In design 'IOTDF', a pin on submodule 'clk_gate_cnt_read_r_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'IOTDF', a pin on submodule 'clk_gate_cnt_round_r_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'IOTDF', a pin on submodule 'clk_gate_fn_sel_r_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'IOTDF', a pin on submodule 'clk_gate_iot_in_r_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'IOTDF', a pin on submodule 'clk_gate_iot_in_r_reg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'IOTDF', a pin on submodule 'clk_gate_iot_in_r_reg_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'IOTDF', a pin on submodule 'clk_gate_iot_in_r_reg_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'IOTDF', a pin on submodule 'clk_gate_iot_in_r_reg_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'IOTDF', a pin on submodule 'clk_gate_iot_in_r_reg_4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'IOTDF', a pin on submodule 'clk_gate_iot_in_r_reg_5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'IOTDF', a pin on submodule 'clk_gate_iot_in_r_reg_6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'IOTDF', a pin on submodule 'clk_gate_iot_in_r_reg_7' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'IOTDF', a pin on submodule 'clk_gate_iot_in_r_reg_8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'IOTDF', a pin on submodule 'clk_gate_iot_in_r_reg_9' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'IOTDF', a pin on submodule 'clk_gate_iot_in_r_reg_10' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'IOTDF', a pin on submodule 'clk_gate_iot_in_r_reg_11' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'IOTDF', a pin on submodule 'clk_gate_iot_in_r_reg_12' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'IOTDF', a pin on submodule 'clk_gate_iot_in_r_reg_13' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'IOTDF', a pin on submodule 'clk_gate_iot_in_r_reg_14' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'IOTDF', a pin on submodule 'clk_gate_iot_out1_r_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'IOTDF', a pin on submodule 'clk_gate_iot_out1_r_reg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'IOTDF', a pin on submodule 'clk_gate_iot_out1_r_reg_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'IOTDF', a pin on submodule 'clk_gate_iot_out2_r_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'IOTDF', a pin on submodule 'clk_gate_iot_out2_r_reg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+1
+exit
+
+Memory usage for this session 264 Mbytes.
+Memory usage for this session including child processes 389 Mbytes.
+CPU usage for this session 323 seconds ( 0.09 hours ).
+Elapsed time for this session 262 seconds ( 0.07 hours ).
+
+Thank you...

@@ -1,0 +1,74 @@
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Sun Dec 15 23:18:16 2024
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file '../08_HIDDEN_TESTBED/testbed.sv'
+Parsing included file '../08_HIDDEN_TESTBED/pattern/tb_dat_combine.sv'.
+Back to file '../08_HIDDEN_TESTBED/testbed.sv'.
+Parsing design file './ver5_1/ed25519.sv'
+Parsing design file './ver5_1/ALU.v'
+Parsing design file './ver5_1/RegFile.v'
+Parsing design file './ver5_1/LUTFile.v'
+Parsing design file './ver5_1/Mul.v'
+Parsing design file './ver5_1/ModQ.v'
+Parsing design file './ver5_1/ModularAdd.v'
+Parsing design file './ver5_1/ModularSub.v'
+Top Level Modules:
+       testbench
+TimeScale is 1 ns / 10 ps
+Starting vcs inline pass...
+
+131 modules and 0 UDP read.
+recompiling package dat_17
+recompiling package dat_18
+recompiling module testbench
+3 of 131 modules done
+	However, due to incremental compilation, only 3 modules need to be compiled. 
+make: Warning: File `filelist.cu' has modification time 35 s in the future
+make[1]: Warning: File `filelist.cu' has modification time 35 s in the future
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Warning: File `filelist.cu' has modification time 35 s in the future
+ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
+rm -f _cuarc0.so
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/usr/cad/synopsys/vcs/2022.06/linux64/lib -L/usr/cad/synopsys/vcs/2022.06/linux64/lib  -Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _15884_archive_1.so _prev_archive_1.so _cuarc0.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc -lvfs /usr/cad/synopsys/verdi/cur/share/PLI/VCS/LINUX64/pli.a    -lvcsnew -lsimprofile -luclinative /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_save_restore_new.o -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make: warning:  Clock skew detected.  Your build may be incomplete.
+Notice: timing checks disabled with +notimingcheck at compile-time
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Dec 15 23:18 2024
+**********************************************
+==> Send Input Done...
+==> Waiting Calculation...
+==> Receive Output Done...
+----------------------------------------------
+                 PAT18 PASS!                 
+----------------------------------------------
+Simulation Cycle:   3799, Time:    34191.00 ns
+**********************************************
+$finish called from file "../08_HIDDEN_TESTBED/testbed.sv", line 502.
+$finish at simulation time              3426300
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 34263000 ps
+CPU Time:      0.920 seconds;       Data structure size:   0.1Mb
+Sun Dec 15 23:18:53 2024
+CPU time: 1.913 seconds to compile + .857 seconds to elab + .534 seconds to link + .965 seconds in simulation

@@ -1,0 +1,48 @@
+
+
+ Static entries in elaborated design under "testbench.u_ed25519":
+	 Annotated by SDF "../03_GATE/ed25519_syn.sdf":
+
+	 No. of Pathdelays   = 633558  Annotated = 100.00%
+	 No. of Tchecks      = 18640  Annotated = 99.96%
+
+	                                    Total            Annotated           Percentage
+	 IOPATH                            633558               633558               100.00%
+	 INTERCONNECT                          --               349968                   --
+
+	 Path Delays Summary of above
+
+	 SETUPHOLD                           6220                 6216                99.94%
+	 WIDTH                               6200                 6200               100.00%
+
+	 Timing checks Summary of above
+
+
+ OverAll Static entries in elaborated design:
+	 No. of Pathdelays   = 633558  Annotated = 100.00%
+	 No. of Tchecks      = 18640  Annotated = 99.96%
+
+	                                    Total            Annotated           Percentage
+	 IOPATH                            633558               633558               100.00%
+	 INTERCONNECT                          --               349968                   --
+
+	 Path Delays Summary of above
+
+	 SETUPHOLD                           6220                 6216                99.94%
+	 WIDTH                               6200                 6200               100.00%
+
+	 Timing checks Summary of above
+
+
+
+# ***************************** Design Not Annotated ***************************** #
+
+	 Module Name: EDFFTRX1, 	Instance Name: testbench.u_ed25519.ALU_u0.Mul_u0_L0_r_reg_78_
+		 $setuphold(posedge CK &&& (Dcheck == 1'b1), posedge D, tsetup$D$CK, thold$D$CK, NOTIFIER, , , dCK, dD);
+		 $setuphold(posedge CK &&& (Dcheck == 1'b1), negedge D, tsetup$D$CK, thold$D$CK, NOTIFIER, , , dCK, dD);
+
+	 Module Name: DFFRHQX1, 	Instance Name: testbench.u_ed25519.RegFile_u0_Z_reg_reg_198_
+		 $setuphold(posedge CK, posedge RN, tsetup$RN$CK, thold$RN$CK, NOTIFIER, , , dCK, dRN);
+
+	 Module Name: DFFRHQX1, 	Instance Name: testbench.u_ed25519.RegFile_u0_X_reg_reg_136_
+		 $setuphold(posedge CK, posedge RN, tsetup$RN$CK, thold$RN$CK, NOTIFIER, , , dCK, dRN);

@@ -1,0 +1,12 @@
+# Double and ADD
+# extended representation
+# modular mul no use MM
+# modular div use TA version
+# modular add, sub 都有mod
+# ver2
+# OPTIMIZE 1: Pre-cal, Double & Add, Div-Mul 中間不會idle 1 cycle
+# OPTIMIZE 2: 砍掉Z_lut: always = 1 in Double and ADD
+# OPTIMIZE 3: 把TempSub合到modular sub
+# 小改動: top module用.sv ==> 解決第一版no setup hold vio but gate-sim cant pass(cnt = 'x)?
+# ver2_1
+# try 4 stage pipeline multipiler

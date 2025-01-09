@@ -1,0 +1,1 @@
+Original tar files from TA are 1131_hw2_v2 and PATTERN_v3. Patterns in 1131_hw2_v2 is not correct, use patterns in PATTERN_v3.

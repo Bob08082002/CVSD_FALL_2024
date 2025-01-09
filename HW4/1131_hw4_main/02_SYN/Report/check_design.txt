@@ -1,0 +1,22 @@
+ 
+****************************************
+check_design summary:
+Version:     U-2022.12
+Date:        Mon Nov 18 19:28:50 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      2
+    Feedthrough (LINT-29)                                           1
+    Constant outputs (LINT-52)                                      1
+
+Cells                                                               2
+    Cells do not drive (LINT-1)                                     2
+--------------------------------------------------------------------------------
+
+Warning: In design 'IOTDF', cell 'B_42' does not drive any nets. (LINT-1)
+Warning: In design 'IOTDF', cell 'B_43' does not drive any nets. (LINT-1)
+Warning: In design 'CRC_Gen', input port 'crc_dividend_in[0]' is connected directly to output port 'crc_remainder_out[0]'. (LINT-29)
+Warning: In design 'IOTDF', output port 'busy' is connected directly to 'logic 0'. (LINT-52)
+1

@@ -1,0 +1,42 @@
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Mon Dec 16 00:01:20 2024
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file '../08_HIDDEN_TESTBED/testbed.sv'
+Parsing included file '../08_HIDDEN_TESTBED/pattern/tb_dat_combine.sv'.
+Back to file '../08_HIDDEN_TESTBED/testbed.sv'.
+Parsing design file './ver5_1/ed25519.sv'
+Parsing design file './ver5_1/ALU.v'
+Parsing design file './ver5_1/RegFile.v'
+Parsing design file './ver5_1/LUTFile.v'
+Parsing design file './ver5_1/Mul.v'
+Parsing design file './ver5_1/ModQ.v'
+Parsing design file './ver5_1/ModularAdd.v'
+Parsing design file './ver5_1/ModularSub.v'
+Top Level Modules:
+       testbench
+TimeScale is 1 ns / 10 ps
+Starting vcs inline pass...
+
+131 modules and 0 UDP read.
+recompiling package dat_93
+recompiling package dat_94
+recompiling module testbench
+3 of 131 modules done
+	However, due to incremental compilation, only 3 modules need to be compiled. 

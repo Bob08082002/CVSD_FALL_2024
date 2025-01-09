@@ -1,0 +1,7 @@
+# Double and ADD
+# extended representation
+# modular mul no use MM
+# modular div use TA version
+# modular add, sub 都有mod
+# Pre-cal, Double & Add, Div-Mul 中間會idle 1 cycle
+# 

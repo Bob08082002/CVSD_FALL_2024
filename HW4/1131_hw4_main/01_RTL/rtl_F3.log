@@ -1,0 +1,143 @@
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Mon Nov 18 19:27:06 2024
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file '../00_TESTBED/testfixture.v'
+Parsing design file './IOTDF.v'
+Parsing design file './F_Function.v'
+Parsing design file './Sub_Key.v'
+Parsing design file './CRC_Gen.v'
+Top Level Modules:
+       test
+TimeScale is 1 ns / 10 ps
+Starting vcs inline pass...
+
+2 modules and 0 UDP read.
+recompiling module test
+	However, due to incremental compilation, only 1 module needs to be compiled. 
+make: Warning: File `filelist.cu' has modification time 1.9 s in the future
+make[1]: Warning: File `filelist.cu' has modification time 1.8 s in the future
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Warning: File `filelist.cu' has modification time 1.8 s in the future
+ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
+rm -f _cuarc0.so
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/usr/cad/synopsys/vcs/2022.06/linux64/lib -L/usr/cad/synopsys/vcs/2022.06/linux64/lib  -Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _27227_archive_1.so _prev_archive_1.so _cuarc0.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_save_restore_new.o /usr/cad/synopsys/verdi/cur/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make: warning:  Clock skew detected.  Your build may be incomplete.
+Notice: timing checks disabled with +notimingcheck at compile-time
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Nov 18 19:27 2024
+*Verdi* Loading libsscore_vcs202206.so
+FSDB Dumper for VCS, Release Verdi_T-2022.06, Linux x86_64/64bit, 05/29/2022
+(C) 1996 - 2022 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'IOTDF_F3.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+-----------------------------------------------------
+
+Start to Send IOT Data & Compare ...
+
+
+P00:  ** Correct!! ** , iot_out=00000000000000000000000000000006
+P01:  ** Correct!! ** , iot_out=00000000000000000000000000000000
+P02:  ** Correct!! ** , iot_out=00000000000000000000000000000002
+P03:  ** Correct!! ** , iot_out=00000000000000000000000000000002
+P04:  ** Correct!! ** , iot_out=00000000000000000000000000000002
+P05:  ** Correct!! ** , iot_out=00000000000000000000000000000000
+P06:  ** Correct!! ** , iot_out=00000000000000000000000000000002
+P07:  ** Correct!! ** , iot_out=00000000000000000000000000000000
+P08:  ** Correct!! ** , iot_out=00000000000000000000000000000004
+P09:  ** Correct!! ** , iot_out=00000000000000000000000000000004
+P10:  ** Correct!! ** , iot_out=00000000000000000000000000000002
+P11:  ** Correct!! ** , iot_out=00000000000000000000000000000004
+P12:  ** Correct!! ** , iot_out=00000000000000000000000000000002
+P13:  ** Correct!! ** , iot_out=00000000000000000000000000000004
+P14:  ** Correct!! ** , iot_out=00000000000000000000000000000000
+P15:  ** Correct!! ** , iot_out=00000000000000000000000000000002
+P16:  ** Correct!! ** , iot_out=00000000000000000000000000000002
+P17:  ** Correct!! ** , iot_out=00000000000000000000000000000002
+P18:  ** Correct!! ** , iot_out=00000000000000000000000000000002
+P19:  ** Correct!! ** , iot_out=00000000000000000000000000000004
+P20:  ** Correct!! ** , iot_out=00000000000000000000000000000002
+P21:  ** Correct!! ** , iot_out=00000000000000000000000000000006
+P22:  ** Correct!! ** , iot_out=00000000000000000000000000000004
+P23:  ** Correct!! ** , iot_out=00000000000000000000000000000006
+P24:  ** Correct!! ** , iot_out=00000000000000000000000000000006
+P25:  ** Correct!! ** , iot_out=00000000000000000000000000000002
+P26:  ** Correct!! ** , iot_out=00000000000000000000000000000000
+P27:  ** Correct!! ** , iot_out=00000000000000000000000000000006
+P28:  ** Correct!! ** , iot_out=00000000000000000000000000000000
+P29:  ** Correct!! ** , iot_out=00000000000000000000000000000004
+P30:  ** Correct!! ** , iot_out=00000000000000000000000000000000
+P31:  ** Correct!! ** , iot_out=00000000000000000000000000000006
+P32:  ** Correct!! ** , iot_out=00000000000000000000000000000002
+P33:  ** Correct!! ** , iot_out=00000000000000000000000000000002
+P34:  ** Correct!! ** , iot_out=00000000000000000000000000000004
+P35:  ** Correct!! ** , iot_out=00000000000000000000000000000000
+P36:  ** Correct!! ** , iot_out=00000000000000000000000000000004
+P37:  ** Correct!! ** , iot_out=00000000000000000000000000000002
+P38:  ** Correct!! ** , iot_out=00000000000000000000000000000002
+P39:  ** Correct!! ** , iot_out=00000000000000000000000000000006
+P40:  ** Correct!! ** , iot_out=00000000000000000000000000000002
+P41:  ** Correct!! ** , iot_out=00000000000000000000000000000000
+P42:  ** Correct!! ** , iot_out=00000000000000000000000000000004
+P43:  ** Correct!! ** , iot_out=00000000000000000000000000000006
+P44:  ** Correct!! ** , iot_out=00000000000000000000000000000002
+P45:  ** Correct!! ** , iot_out=00000000000000000000000000000004
+P46:  ** Correct!! ** , iot_out=00000000000000000000000000000004
+P47:  ** Correct!! ** , iot_out=00000000000000000000000000000000
+P48:  ** Correct!! ** , iot_out=00000000000000000000000000000000
+P49:  ** Correct!! ** , iot_out=00000000000000000000000000000004
+P50:  ** Correct!! ** , iot_out=00000000000000000000000000000002
+P51:  ** Correct!! ** , iot_out=00000000000000000000000000000000
+P52:  ** Correct!! ** , iot_out=00000000000000000000000000000006
+P53:  ** Correct!! ** , iot_out=00000000000000000000000000000004
+P54:  ** Correct!! ** , iot_out=00000000000000000000000000000004
+P55:  ** Correct!! ** , iot_out=00000000000000000000000000000000
+P56:  ** Correct!! ** , iot_out=00000000000000000000000000000006
+P57:  ** Correct!! ** , iot_out=00000000000000000000000000000002
+P58:  ** Correct!! ** , iot_out=00000000000000000000000000000004
+P59:  ** Correct!! ** , iot_out=00000000000000000000000000000006
+P60:  ** Correct!! ** , iot_out=00000000000000000000000000000006
+P61:  ** Correct!! ** , iot_out=00000000000000000000000000000006
+P62:  ** Correct!! ** , iot_out=00000000000000000000000000000006
+P63:  ** Correct!! ** , iot_out=00000000000000000000000000000006
+
+-----------------------------------------------------
+
+Congratulations! All data have been generated successfully!
+
+Total cost time:    8882.50 ns
+-------------------------PASS------------------------
+
+$finish called from file "../00_TESTBED/testfixture.v", line 302.
+$finish at simulation time               888250
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 8882500 ps
+CPU Time:      0.900 seconds;       Data structure size:   0.0Mb
+Mon Nov 18 19:27:14 2024
+CPU time: 1.323 seconds to compile + .692 seconds to elab + .530 seconds to link + .947 seconds in simulation

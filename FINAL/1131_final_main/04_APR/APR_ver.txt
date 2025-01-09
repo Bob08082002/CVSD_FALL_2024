@@ -1,0 +1,28 @@
+v1: use rtl ver2. period = 10.0 ns. 
+	utilization rate = 0.7, core to margin = 30, power ring 各1bit, 
+	vertical set-to-set distance = 50 and from 50, horizontal set-to-set distance = 40 and from 40,
+	
+v2: use rtl ver5. period = 7.0 ns. 
+	utilization rate = 0.9, core to margin = 10, power ring 各1bit, 
+	vertical set-to-set distance = 40 and from 40, horizontal set-to-set distance = 40 and from 40,
+	postsim failed
+	
+v3: use rtl ver5. period = 7.0 ns. 
+	utilization rate = 0.85, core to margin = 8, power ring 各1bit, 
+	vertical set-to-set distance = 40 and from 40, horizontal set-to-set distance = 40 and from 40,
+	postsim failed
+	
+v4: use rtl ver5(use compile_ultra -retime). period = 7.0 ns. 
+	utilization rate = 0.85, core to margin = 8, power ring 各1bit, 
+	vertical set-to-set distance = 40 and from 40, horizontal set-to-set distance = 40 and from 40,
+	postsim failed
+
+v5: use rtl ver5. period = 7.0 ns. 
+	utilization rate = 0.83, core to margin = 8, power ring 各1bit, 
+	vertical set-to-set distance = 60 and from 60, horizontal set-to-set distance = 60 and from 60,
+	postsim failed
+
+v6: use rtl ver5. period = 7.0 ns. 
+	utilization rate = 0.82, core to margin = 8, power ring 各1bit, 
+	vertical set-to-set distance = 60 and from 60, horizontal set-to-set distance = 60 and from 60,
+	postsim failed

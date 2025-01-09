@@ -1,0 +1,19 @@
+ 
+****************************************
+check_design summary:
+Version:     U-2022.12
+Date:        Sat Dec 14 02:34:14 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               5
+    Cells do not drive (LINT-1)                                     5
+--------------------------------------------------------------------------------
+
+Warning: In design 'ed25519', cell 'C4908' does not drive any nets. (LINT-1)
+Warning: In design 'ed25519', cell 'C4920' does not drive any nets. (LINT-1)
+Warning: In design 'ed25519', cell 'C4921' does not drive any nets. (LINT-1)
+Warning: In design 'ALU', cell 'B_205' does not drive any nets. (LINT-1)
+Warning: In design 'ModularSub', cell 'I_0' does not drive any nets. (LINT-1)
+1
