@@ -17,3 +17,4 @@ Lecturer: Chia-Hsiang Yang 楊家驤老師
 - HW5 -- APR
 
 - Final Project -- Elliptic Curve Cryptographic Process
+    - Performance Rank: 2/69
